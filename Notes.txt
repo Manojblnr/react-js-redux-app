@@ -1,0 +1,34 @@
+
+redux Q and A :
+    Link: https://www.geeksforgeeks.org/react-redux-interview-questions-and-answers/
+
+
+
+Setup redux environment
+
+1. Install the redux package
+    npm install @reduxjs/toolkit
+    npm install react-redux
+
+2. create store
+    1. create a store.js file inside src
+    2. Using Provider connect the store and components
+        1. In index.js file use Provider and make connection
+    
+3. Create a slice for task
+    1. create slices folder in src
+    2. create a tasksSlice.js file 
+        1. This file containes the Reducer(s), Initial state, slice name.
+        2. In the reducers is the functions, in that we need to pass
+            state, and action.
+        3. action has object of type and payload
+
+4. create a task
+    1. In Form.jsx file do dispatch actions.
+
+5. Reading the task
+    1. In Navbar.jsx file use useSelector hook and pass the reducer name we passed as key in the store.js file
+    2. get the tasksList array and use the length.
+
+6. For displaying the state data in table
+    1. same like above
